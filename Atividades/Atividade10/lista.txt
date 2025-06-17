@@ -1,0 +1,6 @@
+Escolha uma opção:
+1. Soma dos numeros
+2. Media dos numeros
+3. Maior numero
+4. Menor numero
+5. Sair
