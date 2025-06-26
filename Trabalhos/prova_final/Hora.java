@@ -169,9 +169,11 @@ public class Hora {
         return seg;
     }
     
-    public String getHora1(){
-        return hora+":"+min+":"+seg;
+    public String getHora1()
+    {
+        return String.format("%02d:%02d:%02d", hora, min, seg);
     }
+
     
     public String getHora2(){
         String am_pm = "";

@@ -29,7 +29,7 @@ public class Data {
                 break;
             } else {
                 System.out.println("Dia invalido! Digite um valor correto!!!");
-            }
+            }                           
         }
 
         while (true) {
@@ -211,10 +211,13 @@ public class Data {
     public int retAno() {
         return ano;
     }
+    
+    public String mostra1() {
+    String anoDoisDigitos = String.format("%02d", ano % 100);
+    
+    return String.format("%02d/%02d/%s", dia, mes, anoDoisDigitos);
+}
 
-    public void mostra1() {
-        System.out.println(dia + "/" + mes + "/" + ano);
-    }
 
     public void mostra2() {
         String mesExtenso = "";
