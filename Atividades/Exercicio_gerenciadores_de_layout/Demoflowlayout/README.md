@@ -1,18 +1,18 @@
-## Getting Started
+# Exemplo de CardLayout em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um exemplo de como usar **CardLayout** em Java Swing para criar uma interface com múltiplos "cards" (painéis) que podem ser alternados através de botões.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- JFrame com CardLayout gerenciando os cards
+- Três cards diferentes com textos distintos
+- Painel de botões para navegação entre os cards
+- Uso de `ActionListener` para detectar cliques nos botões e mostrar o card correspondente
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como executar
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Certifique-se de ter o **Java JDK** instalado.
+2. Compile o arquivo:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+javac ExemploCardLayout.java
