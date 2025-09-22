@@ -1,18 +1,29 @@
-## Getting Started
+Cadastro de Alunos - Java Swing
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é uma aplicação desktop feita em Java utilizando Swing, que permite cadastrar, listar e gerenciar informações de alunos de forma simples.
 
-## Folder Structure
+✨ Funcionalidades
 
-The workspace contains two folders by default, where:
+Cadastro de alunos com:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Nome
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Idade
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Endereço
 
-## Dependency Management
+Geração automática de um UUID para cada aluno.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Botão OK → Cadastra o aluno.
+
+Botão Limpar → Limpa os campos de texto.
+
+Botão Mostrar → Exibe a lista de alunos cadastrados.
+
+Botão Sair → Fecha a aplicação.
+
+🚀 Tecnologias
+
+Java 8+
+
+Swing (JFrame, JPanel, GridLayout, JButton, JTextField, JOptionPane)
