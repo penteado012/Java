@@ -1,18 +1,83 @@
-## Getting Started
+# Projetos Java - Calculadora e FormPessoa (v03)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém dois projetos desenvolvidos em **Java** utilizando **Swing** para interfaces gráficas (GUI): uma **Calculadora** e um **Formulário de Cadastro de Pessoa** (versão 03).
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 1. Calculadora
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Uma aplicação de calculadora simples com interface gráfica, que realiza operações básicas:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Adição (+)
+- Subtração (-)
+- Multiplicação (*)
+- Divisão (/)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Funcionalidades:
 
-## Dependency Management
+- Botões numéricos de 0 a 9.
+- Operadores básicos.
+- Botão `C` para limpar o display.
+- Suporte a números decimais.
+- Cálculo de resultados exibidos ao clicar `=`.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Exemplo de uso:
+
+1. Digite um número.
+2. Clique em um operador.
+3. Digite outro número.
+4. Clique em `=` para ver o resultado.
+5. Clique em `C` para reiniciar.
+
+---
+
+## 2. FormPessoa (v03)
+
+Um formulário para cadastro de informações de uma pessoa, utilizando **Swing**.
+
+### Campos do formulário:
+
+1. **Número do KP** – gerado automaticamente.
+2. **Nome** – obrigatório.
+3. **Sexo** – opções "Masculino" ou "Feminino" via **RadioButton**.
+4. **Idade** – campo numérico limitado a 2 dígitos.
+5. **Botão OK** – valida os campos e salva os dados.
+6. **Botão Mostrar** – exibe os dados salvos em uma caixa de diálogo.
+
+### Funcionalidades:
+
+- Validação de campos obrigatórios.
+- Apenas números permitidos no campo de idade.
+- Controle de escolha única no sexo usando `ButtonGroup`.
+- Geração automática de KP incrementando a cada cadastro.
+
+---
+
+## Estrutura do Projeto
+
+- `Calculadora.java` → Classe principal da calculadora.
+- `FormPessoa.java` → Classe principal do formulário de pessoa.
+- `Pessoa.java` → Classe que representa os dados da pessoa.
+- `App.java` → Classe para iniciar as aplicações.
+
+---
+
+## Tecnologias utilizadas
+
+- Java SE 8+
+- Swing (GUI)
+- NetBeans ou qualquer IDE compatível com Java
+
+---
+
+## Observações
+
+- Este repositório é focado no aprendizado de **Java GUI** e manipulação básica de eventos.
+- FormPessoa está na **versão 03**, com melhorias de validação e exibição de dados.
+- A calculadora é uma versão funcional básica, sem uso de listas ou estruturas complexas.
+
+---
+
+### Autor
+
+**Matheus Penteado**
