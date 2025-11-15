@@ -41,13 +41,21 @@ public class FormPessoa extends JFrame{
 
         JPanel topo3 = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
 
-        JLabel lblSexo = new JLabel("Digite seu sexo:  ");
-        String[] Opcoes = {"M", "F"};
-        JComboBox<String> comboSexo = new JComboBox<>(Opcoes);
-            comboSexo.setPreferredSize(new java.awt.Dimension(150, 25));
+        JLabel lblSexo = new JLabel("Selecione seu sexo:");
+        
+        JRadioButton rtbMasculino = new JRadioButton("Masculino");
+        JRadioButton rtbFeminino = new JRadioButton("Feminino");
+
+        ButtonGroup grupoSexo = new ButtonGroup();
+        grupoSexo.add(rtbFeminino);
+        grupoSexo.add(rtbMasculino);
+
+            rtbMasculino.setPreferredSize(new java.awt.Dimension(150, 25));
+            rtbFeminino.setPreferredSize(new java.awt.Dimension(150, 25));
 
         topo3.add(lblSexo);
-        topo3.add(comboSexo);
+        topo3.add(rtbMasculino);
+        topo3.add(rtbFeminino);
         painelCampos.add(topo3);
 
         add(painelCampos, BorderLayout.NORTH);
@@ -85,7 +93,12 @@ public class FormPessoa extends JFrame{
                 return;
             }
 
-            String s = (String) comboSexo.getSelectedItem();
+            String s;
+            if(rtbMasculino.isSelected()){
+                s = "M";
+            } else {
+                s = "F";
+            }
             if(!s.equals("M") && !s.equals("F")){
                 JOptionPane.showMessageDialog(null, "Digite M ou F! No Campo Sexo");
                 return;
