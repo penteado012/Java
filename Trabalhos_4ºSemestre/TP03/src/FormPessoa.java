@@ -131,7 +131,7 @@ public class FormPessoa extends JFrame{
 
         add(painelCampos, BorderLayout.CENTER);
 
-    // ========== CAMPO 6 (Botao Mostrar) ==========
+    // ========== CAMPO 6 (Botao Mostrar) ===========
         jbtMostrar.addActionListener(e -> {
             JOptionPane.showMessageDialog(null, "Numero do Kp: " + umaPessoa.kp + "\n" +
             "Nome: " + umaPessoa.nome + "\n" +
