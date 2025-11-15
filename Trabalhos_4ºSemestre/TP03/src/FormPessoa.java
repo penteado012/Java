@@ -42,11 +42,12 @@ public class FormPessoa extends JFrame{
         JPanel topo3 = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
 
         JLabel lblSexo = new JLabel("Digite seu sexo:  ");
-        JTextField Sexo = new JTextField();
-        Sexo.setPreferredSize(new java.awt.Dimension(150, 25));
+        String[] Opcoes = {"M", "F"};
+        JComboBox<String> comboSexo = new JComboBox<>(Opcoes);
+            comboSexo.setPreferredSize(new java.awt.Dimension(150, 25));
 
         topo3.add(lblSexo);
-        topo3.add(Sexo);
+        topo3.add(comboSexo);
         painelCampos.add(topo3);
 
         add(painelCampos, BorderLayout.NORTH);
@@ -84,7 +85,7 @@ public class FormPessoa extends JFrame{
                 return;
             }
 
-            String s = Sexo.getText().trim().toUpperCase();
+            String s = (String) comboSexo.getSelectedItem();
             if(!s.equals("M") && !s.equals("F")){
                 JOptionPane.showMessageDialog(null, "Digite M ou F! No Campo Sexo");
                 return;
