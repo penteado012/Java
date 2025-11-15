@@ -17,7 +17,7 @@ public class Calculadora extends JFrame {
         display.setHorizontalAlignment(JTextField.RIGHT);
         display.setEditable(false);
         add(display, BorderLayout.NORTH);
-
+        
         JPanel painel = new JPanel(new GridLayout(5, 4));
 
         // Botões
