@@ -66,7 +66,7 @@ Um formulário para cadastro de informações de uma pessoa, utilizando **Swing*
 
 - Java SE 8+
 - Swing (GUI)
-- NetBeans ou qualquer IDE compatível com Java
+- Visual Studio
 
 ---
 
